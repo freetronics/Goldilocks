@@ -12912,6 +12912,53 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <rectangle x1="-1.4732" y1="0.2032" x2="-1.3462" y2="0.3302" layer="51"/>
 <rectangle x1="-1.1176" y1="0.5842" x2="-0.9906" y2="0.7112" layer="51"/>
 </package>
+<package name="TC-120V">
+<pad name="P$1" x="-2.5" y="0" drill="0.6"/>
+<pad name="P$2" x="2.5" y="0" drill="0.6"/>
+<wire x1="-3.65" y1="2.45" x2="-3.65" y2="-3.65" width="0.4064" layer="51"/>
+<wire x1="-3.65" y1="-3.65" x2="3.65" y2="-3.65" width="0.4064" layer="51"/>
+<wire x1="3.65" y1="-3.65" x2="3.65" y2="2.45" width="0.4064" layer="51"/>
+<wire x1="3.65" y1="2.45" x2="1.5" y2="2.45" width="0.4064" layer="51"/>
+<wire x1="1.5" y1="2.45" x2="-1.5" y2="2.45" width="0.4064" layer="51"/>
+<wire x1="-1.5" y1="2.45" x2="-3.65" y2="2.45" width="0.4064" layer="51"/>
+<wire x1="-1.5" y1="2.45" x2="-1.5" y2="3.15" width="0.4064" layer="51"/>
+<wire x1="-1.5" y1="3.15" x2="1.5" y2="3.15" width="0.4064" layer="51"/>
+<wire x1="1.5" y1="3.15" x2="1.5" y2="2.45" width="0.4064" layer="51"/>
+<wire x1="3.65" y1="-0.65" x2="3.65" y2="2.45" width="0.4064" layer="21"/>
+<wire x1="-3.65" y1="2.45" x2="-3.65" y2="-0.65" width="0.4064" layer="21"/>
+<wire x1="-2.65" y1="-3.65" x2="2.65" y2="-3.65" width="0.4064" layer="21"/>
+<wire x1="1.5" y1="2.45" x2="-1.5" y2="2.45" width="0.4064" layer="21"/>
+<wire x1="-1.5" y1="2.45" x2="-3.65" y2="2.45" width="0.4064" layer="21"/>
+<wire x1="3.65" y1="2.45" x2="1.5" y2="2.45" width="0.4064" layer="21"/>
+<wire x1="-1.5" y1="3.15" x2="1.5" y2="3.15" width="0.4064" layer="21"/>
+<wire x1="1.5" y1="3.15" x2="1.5" y2="2.45" width="0.4064" layer="21"/>
+<wire x1="-1.5" y1="2.45" x2="-1.5" y2="3.15" width="0.4064" layer="21"/>
+<pad name="P$3" x="-3.5" y="-2.5" drill="1.2"/>
+<pad name="P$4" x="3.5" y="-2.5" drill="1.2"/>
+<text x="-4" y="4" size="1.778" layer="25">&gt;NAME</text>
+<text x="-4" y="-6" size="1.778" layer="27">&gt;VALUE</text>
+</package>
+<package name="TYCO-FSMRAJ">
+<pad name="1" x="-2.25" y="0" drill="1"/>
+<pad name="2" x="2.25" y="0" drill="1"/>
+<pad name="TAB1" x="-3.5" y="2.5" drill="1.3"/>
+<pad name="TAB2" x="3.5" y="2.5" drill="1.3"/>
+<wire x1="-3.45" y1="4" x2="-3.45" y2="-2.4" width="0.4064" layer="51"/>
+<wire x1="-3.45" y1="-2.4" x2="-2.05" y2="-2.4" width="0.4064" layer="51"/>
+<wire x1="-2.05" y1="-2.4" x2="2.05" y2="-2.4" width="0.4064" layer="51"/>
+<wire x1="2.05" y1="-2.4" x2="3.45" y2="-2.4" width="0.4064" layer="51"/>
+<wire x1="3.45" y1="-2.4" x2="3.45" y2="4" width="0.4064" layer="51"/>
+<wire x1="3.45" y1="4" x2="-3.45" y2="4" width="0.4064" layer="51"/>
+<wire x1="-2.05" y1="-2.4" x2="-2.05" y2="-3.15" width="0.4064" layer="51"/>
+<wire x1="-2.05" y1="-3.15" x2="2.05" y2="-3.15" width="0.4064" layer="51"/>
+<wire x1="2.05" y1="-3.15" x2="2.05" y2="-2.4" width="0.4064" layer="51"/>
+<text x="-3" y="5" size="1.778" layer="25">&gt;NAME</text>
+<text x="-3" y="-6" size="1.778" layer="27">&gt;VALUE</text>
+<wire x1="3.45" y1="4" x2="-3.45" y2="4" width="0.254" layer="21"/>
+<wire x1="3.45" y1="-2.4" x2="3.45" y2="0.762" width="0.254" layer="21"/>
+<wire x1="-3.45" y1="0.762" x2="-3.45" y2="-2.4" width="0.254" layer="21"/>
+<wire x1="-3.45" y1="-2.4" x2="3.45" y2="-2.4" width="0.254" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TEXAS_TPS770XX">
@@ -13181,6 +13228,26 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <text x="-5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-10.16" y="0" length="middle"/>
 <pin name="2" x="10.16" y="0" length="middle" rot="R180"/>
+</symbol>
+<symbol name="SWITCH-MOMENTARY-2PIN">
+<wire x1="1.905" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="1.905" y1="4.445" x2="1.905" y2="3.175" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="4.445" x2="-1.905" y2="3.175" width="0.254" layer="94"/>
+<wire x1="1.905" y1="4.445" x2="0" y2="4.445" width="0.254" layer="94"/>
+<wire x1="0" y1="4.445" x2="-1.905" y2="4.445" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="0" y1="4.445" x2="0" y2="3.175" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="1.905" y2="1.27" width="0.254" layer="94"/>
+<circle x="-2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
+<circle x="2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
+<text x="-2.54" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-6.35" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="2"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="2" rot="R180"/>
+<pin name="TAB1" x="-5.16" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="2"/>
+<pin name="TAB2" x="5.16" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="2" rot="R180"/>
+<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.4064" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -14405,6 +14472,35 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TAC-SWITCH-2PIN-GND">
+<gates>
+<gate name="G$1" symbol="SWITCH-MOMENTARY-2PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="FSMMSHPTR" package="TC-120V">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="TAB1" pad="P$3"/>
+<connect gate="G$1" pin="TAB2" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="FSMRAJ" package="TYCO-FSMRAJ">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="TAB1" pad="TAB1"/>
+<connect gate="G$1" pin="TAB2" pad="TAB2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -16649,6 +16745,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="U$48" library="freetronics-jon" deviceset="SJ" device="0402O"/>
 <part name="U$49" library="freetronics-jon" deviceset="SJ" device="0402O"/>
 <part name="U$50" library="freetronics-jon" deviceset="SJ" device="0402O"/>
+<part name="U$51" library="freetronics-jon" deviceset="TAC-SWITCH-2PIN-GND" device="FSMRAJ"/>
 </parts>
 <sheets>
 <sheet>
@@ -17057,6 +17154,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="U$50" gate="1" x="119.38" y="317.5" smashed="yes">
 <attribute name="NAME" x="116.84" y="320.04" size="1.778" layer="95"/>
 </instance>
+<instance part="U$51" gate="G$1" x="195.58" y="330.2"/>
 </instances>
 <busses>
 </busses>
